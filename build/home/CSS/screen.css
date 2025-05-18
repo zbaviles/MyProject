@@ -53,6 +53,14 @@ a:visited {
   color: #65b1ff;
 }
 
+a.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+}
+
 /* Header */
 
 header {
