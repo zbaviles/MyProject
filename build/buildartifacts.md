@@ -8,4 +8,4 @@
 
 3. When using `git status` use `git log --oneline origin/main..HEAD` to see the changes made in the local machine after `git commit -m "update file to build/home"`
 
-4. When searching for the latest commit use `git log origin/main...HEAD` to see the changes in the remote repository after `git push`
+4. When searching for the latest commit use `git log origin/main...HEAD~` to see the changes in the remote repository after `git push`
