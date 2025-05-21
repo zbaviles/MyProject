@@ -215,6 +215,25 @@ nav > ul > li { float: left; }
 nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px; }
 
 
+nav a[aria-haspopup="true"]::after {
+  content: "";
+  display: block; width: 0px; height: 0pc;
+  position: absolute;
+  top: 16px; right: 15px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  left: 20px; right: auto;
+  bottom: 6px; top: auto;
+}
+
+
 
 /* Section - Footer */
 
