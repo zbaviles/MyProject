@@ -181,7 +181,31 @@ nav {
   width: 100%;
 }
 
+nav::after { content: ""; display: block; clear: both; }
+
 nav ul { list-style: none; margin: 0; padding: 0px; }
+
+nav ul li:hover { background-color: #2b0306; }
+
+nav ul li a {  
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+
+nav ul li a:visited { color: #fff; }
+
+nav ul li a:hover { background-color: #6d0911; }
+
+/* top-level */
+nav > ul { padding-left: 200px; }
+
+nav > ul > li { float: left; }
+
+
 
 
 /* Section - Footer */
