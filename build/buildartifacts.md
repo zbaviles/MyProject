@@ -1,4 +1,4 @@
-# Git and GitHub Control Flow by [zbaviles](github.com/zbaviles)
+# Git and GitHub Control Flow by [zbaviles](https://github.com/zbaviles)
 
 ## Step One
 When adding from core/ use `git add --update` before `git push`
