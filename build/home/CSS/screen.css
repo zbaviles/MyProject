@@ -566,4 +566,11 @@ footer a:hover {
     padding: 20px 15px;
     background-color: #4b0a0c;
   }
+
+  nav ul,
+  nav ul ul,
+  nav ul ul ul {
+    display: block;
+    position: static;
+  }
 }
