@@ -7,7 +7,7 @@ When adding from core/ use `git add --update` before `git push`
 When commiting in local machine use example `git commit -m "update file to build/home"` before `git push`
 
     >For now continue to 3. and 4.  
-
+---
 ## Step Three
 When using `git status` use `git log --oneline origin/main..HEAD` to see the changes made in the local machine after `git commit -m "update file to build/home"`
 
