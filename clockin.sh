@@ -33,5 +33,5 @@ routine
 if [ $? -eq 0 ]; then
     echo "Have a nice day $name!"
 else
-    echo "Please push your changes before leaving, $name."
+    echo "There are remote changes. Please pull the latest updates before continuing $name."
 fi
