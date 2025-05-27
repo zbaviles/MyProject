@@ -30,7 +30,7 @@ routine() {
 }
 
 routine
-if [ $? -eq 0 ]; then
+if [ $? -eq 2 ]; then
     echo "Have a nice day $name!"
 else
     echo "There are remote changes. Please pull the latest updates before continuing $name."
