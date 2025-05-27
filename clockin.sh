@@ -10,18 +10,21 @@ routine() {
     remote=$(git log origin/main...HEAD~)
     repo=$(git log --oneline origin/main..HEAD)
 
-    if [ -n "$remote" ]; then
-        echo -e "Done for this day $name?\\n"
-        echo -e "    remote not attached:\\n$remote"
-        return 1
-    elif [ -n "$remote" ]; then
-        echo -e "you have no new commits,\\n"
-        echo -e "Please make some changes before pushing."
-        
-        return 2
-    else
+    if [ -n "$repo" ]; then
         echo -e "you have unpushed commits,\\n"
         echo -e "    Continue with:\\n$repo"
+
+        return 1
+    elif [ -n "$remote" ]; then
+
+        echo -e "Done for today $name?\\n"
+        echo -e "    remote changes:\\n$remote"
+
+        return 2
+    else
+        echo -e "you have no new commits,\\n"
+        echo -e "Please make some changes before pushing."
+
         return 0
     fi
 }
