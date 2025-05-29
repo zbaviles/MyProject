@@ -1,16 +1,20 @@
 #!/bin/bash
 
-# Variables name and day
+# Variables
+# name
+# day
 
 name=$(whoami)
 day=$(date)
 
-# Welcome message
+# Welcome
+# message
 
 echo -e "Welcome $name,\\n"
 echo -e "    $day as of today."
 
-# Routine Function
+# Routine
+# Function
 
 routine() {
     remote=$(git log origin/main...HEAD~)
@@ -35,7 +39,8 @@ routine() {
     fi
 }
 
-# Routine Call
+# Routine
+#Routine Call
 
 routine
 if [ $? -eq 2 ]; then
