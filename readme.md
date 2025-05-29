@@ -5,3 +5,5 @@
 - Ground jobs with `fg 1%`
 ---
 - Look at jobs with `jobs`
+---
+- Use `ps` to find job
