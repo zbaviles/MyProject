@@ -573,7 +573,7 @@ footer a:hover {
     display: block;
     position: static;
   }
- 
+
   nav > ul { padding: 0; }
   nav > ul > li { float: none; margin-top: 25px; }
 
@@ -587,4 +587,17 @@ footer a:hover {
     border: 1px solid rgba(255, 255, 255,.25);
   }
   nav ul li a:hover { background-color: rgba(255, 255, 255,.2); }
+
+  nav ul ul { background: none; }
+
+  nav ul ul li a { margin-left: 30px; }
+  nav ul ul li a { margin-left: 60px; }
+
+  nav a[aria-haspopup="true"]::after { display: none; }
+
+  /* Footer */
+
+  footer div.content { display: block; margin-top: 15px; }
+
+  footer div.content { margin: 0 20px 0 0; }
 }
