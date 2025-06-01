@@ -46,5 +46,5 @@ routine
 if [ $? -eq 2 ]; then
     echo "Have a nice day $name!"
 else
-    echo "There are remote changes. Please pull the latest updates before continuing $name."
+    echo "There are local changes. Please push the latest updates before continuing $name."
 fi
