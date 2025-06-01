@@ -574,45 +574,84 @@ footer a:hover {
     position: static;
   }
 
-  nav > ul { padding: 0; }
-  nav > ul > li { float: none; margin-top: 25px; }
+  nav > ul {
+    padding: 0;
+  }
+  nav > ul > li {
+    float: none;
+    margin-top: 25px;
+  }
 
-  nav ul li:hover { background: none; }
+  nav ul li:hover {
+    background: none;
+  }
 
-  nav ul li a { 
+  nav ul li a {
     width: auto;
     display: block;
     margin: 8px 10px;
     padding: 8px 15px;
-    border: 1px solid rgba(255, 255, 255,.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
-  nav ul li a:hover { background-color: rgba(255, 255, 255,.2); }
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 
-  nav ul ul { background: none; }
+  nav ul ul {
+    background: none;
+  }
 
-  nav ul ul li a { margin-left: 30px; }
-  nav ul ul li a { margin-left: 60px; }
+  nav ul ul li a {
+    margin-left: 30px;
+  }
+  nav ul ul li a {
+    margin-left: 60px;
+  }
 
-  nav a[aria-haspopup="true"]::after { display: none; }
+  nav a[aria-haspopup="true"]::after {
+    display: none;
+  }
 
   /* Footer */
 
+  footer div.content {
+    display: block;
+    margin-top: 15px;
+  }
 
-  footer div.content { display: block; margin-top: 15px; }
-
-  footer div.content { margin: 0 20px 0 0; }
+  footer div.content {
+    margin: 0 20px 0 0;
+  }
 }
 
 @media screen and (max-width: 425px) {
-	/* header */
-	header { height: 110px; background-image: url(../images/banner_425.jpg); }
+  /* header */
+  header {
+    height: 110px;
+    background-image: url(../images/banner_425.jpg);
+  }
 
-	header a.logo {
-		height: 36px; background: rgba(0,0,0,.65) url(../images/logo_small.svg) no-repeat center center;
-		background-size: 126px 17px;
-	}
-	header div.hero { width: 100%; left: 0px; top: 46px; text-align: center; }
-	header div.hero h1 { font-size: 1em; margin-bottom: 10px; }
-	header div.hero a.btn { padding: 2px 30px; font-size: .8em; }
-	header div.hero a.btn span { display: none; }
+  header a.logo {
+    height: 36px;
+    background: rgba(0, 0, 0, 0.65) url(../images/logo_small.svg) no-repeat
+      center center;
+    background-size: 126px 17px;
+  }
+  header div.hero {
+    width: 100%;
+    left: 0px;
+    top: 46px;
+    text-align: center;
+  }
+  header div.hero h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  header div.hero a.btn {
+    padding: 2px 30px;
+    font-size: 0.8em;
+  }
+  header div.hero a.btn span {
+    display: none;
+  }
 }
