@@ -7,3 +7,4 @@
 - Look at jobs with `jobs`
 ---
 - Use `ps` to find job
+> kill with job desired in brackets [1]
