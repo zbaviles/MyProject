@@ -225,3 +225,35 @@ section.how-to blockquote p.credit::before {
   left: 0px;
   top: -1px;
 }
+
+footer {
+  border-top: 1px solid #ccc;
+  position: relative;
+  min-height: 200px;
+  padding: 20px 0 0 170px;
+}
+
+footer::after {
+  content: url(../images/qr_codifydesign.png);
+}
+
+footer a {
+  display: block;
+  margin-top: 15px;
+}
+
+footer a::after {
+  display: block;
+}
+
+footer div.content {
+  padding-left: 20px;
+}
+
+footer div.content::after {
+  content: 'This page was printed from http://codifydesign.com';
+  display: block;
+  margin-top: 30px;
+  font-style: italic;
+  font-size: .9em;
+}
