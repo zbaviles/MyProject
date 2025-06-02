@@ -126,7 +126,7 @@ section.main aside div.content {
   margin: 15px;
 }
 
-section.main aside div.content h3::after {
+section.main aside div.content h3 a::after {
   display: block;
   font-family: serif;
   font-weight: normal;
